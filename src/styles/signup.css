@@ -1,0 +1,95 @@
+.signup-form {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 2rem 2rem;
+    box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.signup-form h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2;
+    border-bottom: 1px solid black;
+}
+
+.signup-form form label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+.signup-form form input {
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #f0f0f0;
+}
+
+.signup-form form .signup {
+    display: block;
+    margin: 1.5rem 0;
+    width: 30rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    background: #1a3fa0;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.signup-form form .sub-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.signup-form form .sub-form p {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+.signup-form form .sub-form p:hover {
+    color: #1a3fa0;
+    transition: all 0.4s ease;
+}
+
+.signup-form .g-signin {
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color: black;
+    border: 1px solid #1a3fa0;
+    border-radius: 0.5rem;
+}
+
+.error-message {
+    background: rgb(185, 32, 32);
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+}
+
+.or-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-form form input {
+        border: 0.1px solid #1c1c1c;
+        border-radius: 0.5rem;
+    }
+}

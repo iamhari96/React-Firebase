@@ -1,0 +1,83 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 2rem 9%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.header .header_logo {
+    font-size: 2rem;
+    color: black;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.header .navbar a:hover {
+    color: #1a3fa0;
+}
+
+.header .navbar a.active {
+    color: #1a3fa0;
+}
+
+.icons {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-error {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: crimson;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 3rem;
+    }
+    .icons {
+        display: block;
+        font-size: 3rem;
+        color: black;
+        position: absolute;
+        right: 3rem;
+    }
+    .header_logo {
+        position: absolute;
+        left: 2rem;
+        padding: 2rem;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        border-radius: .5rem;
+        background: white;
+        transition: all .4s ease;
+        width: 30rem;
+    }
+    .header .navbar.active {
+        right: 2rem;
+        transition: all .4s ease;
+    }
+    .header .navbar a {
+        margin: 2rem 2.5rem;
+        font-size: 2rem;
+        display: block;
+    }
+}
